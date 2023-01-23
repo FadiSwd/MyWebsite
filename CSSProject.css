@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16;
+    font-family: 'Lemonada';
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: #22A39F;
+    /* position: fixed; */
+    width: 100%;
+    z-index: 1;
+    position: sticky;
+    top: 0px
+}
+
+
+.container {
+    direction: ltr;
+}
+
+.navbar-list {
+    list-style: none;
+}
+
+.navbar-item {
+    display: inline-block;
+    height: 50px;
+    width: 11rem;
+    line-height: 50px;
+    text-align: center;
+    /*  يعطي شكل جمالي لخلفية الرابط عند خروج الماوس منه*/
+    transition: 0.3s;
+}
+
+.description {
+    direction: ltr;
+}
+
+
+.navbar-link {
+    text-decoration: none;
+    color: #F3EFE0;
+    /* نضع بلوك لكي نستطيع الضغط على الرابط بكل المربع الموجود داخله وليس فقط النص */
+    display: block;
+
+
+}
+
+.navbar-item:hover {
+    background-color: #434242;
+    /* يصبح تغير لون خلفية نص الرابط ابطا يعطي شكل جمالي */
+    transition: 0.3s;
+
+
+}
+
+#cardstransition {
+    transition: 1s;
+}
+
+
+
+/* ------ قسم الشاشة التي بها الاسم  ------- */
+
+
+
+.main-section {
+    background: #0F2027;
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    height: 675px;
+    padding: 200px
+}
+
+.main-section-text {
+    text-align: center;
+}
+
+.name {
+    color: #F3EFE0;
+    font-size: 4em;
+}
+
+.description {
+    color: #a2e7e7;
+}
+
+
+
+
+/* ----------  cards section  ----------- */
+
+
+
+
+.cards {
+    background-color: #1c6678;
+    background-image: linear-gradient(302deg, #1c6678 0%, #086d51 100%);
+
+    padding: 5rem 2rem;
+    /*  لجعل المحتوى بنصف الصفحة بعج تصغير الصفحة للوسط  */
+    text-align: center;
+
+}
+
+.card {
+    display: inline-block;
+    width: 25%;
+    margin: 4%;
+    background-color: #434242;
+    border-radius: 0.5rem;
+    transition: 0.5s;
+}
+
+.card:hover {
+    transform: scale(1.2);
+}
+
+.card-img {
+    /* لجعل الصورة محتوى داخل الصفحة ولا تاخذ حجمها الحقيقي */
+    width: 100%;
+    border-radius: 0.5rem;
+
+}
+
+.img-text {
+    color: #F3EFE0;
+    text-align: center;
+    padding: 20px;
+    direction: ltr;
+}
+
+
+
+/* ----------  القسم الاخير من الصفحة  ---------  */
+
+
+
+.footer {
+    background: #222222;
+    color: #F3EFE0;
+    text-align: center;
+
+}
+
+.footer div {
+    /* لجعل كل العناصر تسطف جنب بعضها   */
+    display: inline-block;
+    margin: 1rem 9rem;
+}
+
+
+
+
+.footer-link {
+    text-decoration: none;
+    display: block;
+    color: #22A39F;
+}
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+    /* لجعل القوائم تصطف بشكل عمودي للجوال */
+    .navbar-item {
+        display: block;
+        /* لجعل القوائم تصطف بشكل عمودي في وسط الشاشة */
+        width: 100%;
+    }
+
+
+    /* لجعل البطاقات مناسبة لشاشة الجوال */
+    .card {
+        width: 95%;
+    }
+
+
+}
